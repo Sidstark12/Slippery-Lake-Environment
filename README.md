@@ -1,8 +1,4 @@
 # Soc-into-to-Machine-Intelligence
-Overview of the material taught till Week 4
-
-
-# SoC Intro to Machine Intelligence
 
 This is the overview of the material taught upto week 4 for the Soc Intro to Machine Intelligence
 We'll walk through with all the material that has been taught weekwise.
