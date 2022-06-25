@@ -60,3 +60,67 @@ An image explaining how CNN has advantage over ANN and how pooling helps in redu
 ##### Recurrent Neural Network(RNN)
 Generally RNN is used for data that requires a sequencially ordered output.Here the output of the previous step acts as input to current step.RNN is like storing memory as in it remembers data from the previous knowledge given to it and uses it when it is required further in the future.
 Sometimes RNN and CNN are used together to increase the effectivity in pixels.
+
+### Week 5
+
+In this week we learn about topics namely:-
+1. Reinforcement Learning
+2. Q-Learning (intro + implementation)
+
+##### Reinforcement Learning
+
+RL is a part of ML, here agents are sel-trained on reward and punishment based mechanisms. Here the best possible action or path is achieved to gain maximum rewards and minimum punishments through observation.
+There are various defintions which give an insight to what RL is, I'll provide the one which was most understandable to me:
+RL is based on rewarding desired behaviours and punishing undesired ones. Instead of one input producing one output, the algorithm produces various outputs and is trained to select the right one based on some given variables.
+
+Now to familiarise RL topics, some terminologies were introduced
+
+1. Agent:It is the sole decision maker and learner
+2. Environment:A physical world where the agent learns and decides the action to be performed.
+3. Action: A list of action which an agent can perform
+4. State: The current situation of the agent in the nevironment
+5. Reward: For each selected action by the agent, the environment gives a reward. It’s usually a scalar value and
+nothing but feedback from the environment
+6. Policy: The agent prepares strategy(decision-making) to map situations to actions.
+7. Value Function – The value of state shows up the reward achieved starting from the state until the policy
+is executed
+8. Model – Every RL agent doesn’t use a model of its environment. The agent’s view maps state-action pairs
+probability distributions over the states
+
+RL Workflow:
+Create an Environment --> Define the reward--> Create the agent--> Train and validate the agent--> Deploy the policy.
+
+Reinfoecement Learning Algorithms
+There are 3 approacehes to implement reinforcement learning algorithms
+1. Value based :The main goal of this method is to maximize a value function. Here, an agent through a policy expects a long-term return of the current states.
+2. Policy based: In policy-based, you enable to come up with a strategy that helps to gain maximum rewards in the future through possible actions performed in each state. Two types of policy-based methods are deterministic and stochastic.
+3. Model based: In this method, we need to create a virtual model for the agent to help in learning to perform in each specific environment.
+
+##### Types of Reinforcement Learning:
+1. Positive Reinforcement:makes a positive impact on behaviour.
+2. Negative Reinforcement: when a negative condition is avoided it tries to stop the acion in future cases.
+
+##### Some models used for RL.
+1. Markov Decision Process(MDP's)
+2. Q learning
+
+We'll moreover look on Q Learning.
+'Q' in Q-learning stands for quality as in how useful a given action is.
+
+Q*(s,a) is the expected value of doing a in state s and then following the optimal policy.It uses Temporal Differences(TD) to estimate the value of Q*(s,a). It is an agent learning from an environment.
+Agent maintains a table of Q[S,A] where S is the set of states and A is the set of actions.
+Note: Q[s,a] represents its current estimate of Q*(s,a).
+
+Q-table:it is a table that will guide us to the best action at each state.
+Q-function:it uses the Bellman eqaution and takes two inputs -state(s) and action(a).
+
+Steps for Q-learning Algorithm Process:
+1. Initialise the Q-table: A table with n coloumns(n=number of actions) and m rows(m= number of states)
+2. Chose an action
+3. Perform an action:First, an action (a) in the state (s) is chosen based on the Q-Table. Note that, as mentioned earlier, when the episode initially starts, every Q-value should be 0.
+Then, update the Q-values for being at the start and moving right using the Bellman equation which is stated above.
+4. Measure reward
+5. Evaluate:Q(s,a) function needs to be updated. The process is repeated until the learning is stopped.
+Initially, we exlpore the environment and upadte the Q-table.When it is ready, the agent starts to exploit the environment and start taking better actions.
+
+Next we learn about Q-learning implementation in python.
