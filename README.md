@@ -124,3 +124,12 @@ Then, update the Q-values for being at the start and moving right using the Bell
 Initially, we exlpore the environment and upadte the Q-table.When it is ready, the agent starts to exploit the environment and start taking better actions.
 
 Next we learn about Q-learning implementation in python.
+
+### Week 6
+##### Reinforced larnig from OpenAI gym
+
+Till now we have understood basics about reinforcement learning and some of its terminologies such as agents and environments, though just to recap the environment is the universe of agents which changes the state of agent with given action performed on it;an agent is the system that percieves the environment and performs actions.
+
+OpenAI is created for removing this problem of lack of standardization in papers along with an aim to create better benchmarks by giving versatile numbers of environments with great ease of setting up. Aim of this tool is to increase reproducibility in the field of AI and provide tools with which everyone can learn about the basics of AI.
+Further there are some examples given in the source to give basic knowledge about gym and how to get started with it.
+For examlpe to get started type pip install gym
