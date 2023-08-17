@@ -1,4 +1,4 @@
-# Soc-intro-to-Machine-Intelligence
+# Slippery Lake Environment
 
 This is the overview of the material taught upto week 7 for the Soc Intro to Machine Intelligence
 We'll walk through with all the material that has been taught weekwise.
